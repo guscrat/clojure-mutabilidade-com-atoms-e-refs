@@ -1,6 +1,384 @@
-; {:espera <-(111)-<,
+; This is the Calva REPL Window.
+; It's just a file, really, with some special treatment from Calva.
+; Use it as a REPL input prompt if you like. (When the REPL is connected.)
+; TIPS: The keyboard shortcut `ctrl+alt+o r` shows and focuses this window
+; Please see https://calva.io/repl-window/ for more info.
+; Happy coding! ♥️
+
+; TIPS: As with any Clojure file when the REPL is connected:
+; - `alt+enter` evaluates the current top level form.
+; - `ctrl+enter` evaluates the current form.
+; Special for this file:
+; - `alt+up` and `alt+down` traverse up and down the REPL command history
+;    when the cursor is after the last contents at the prompt
+; 
+; See also the Calva Inspector: https://calva.io/inspector/
+
+PLEASE NOTE
+We will update the default location of this file.
+The new default location will be
+  "<projectRootPath>/.calva/repl.calva-repl"
+For now the legacy path is used by default.
+To give yourself a smooth transition, you can opt in
+to the change, by configuring this setting as false:
+  "calva.useLegacyReplWindowPath"
+and then add "**/.calva/repl.calva-repl" to your ".gitignore" file.
+
+
+This file is configured as the output destination for all REPL output.
+You can configure this with the setting:
+  "calva.outputDestinations"
+
+
+; Jacking in...
+; Connecting using "Leiningen" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+; 
+
+; Starting Jack-in: pushd c:\Users\gusta\Downloads\clojure_course\hospital & cmd.exe /d /c lein update-in :dependencies conj [nrepl,"1.1.1"] -- update-in :plugins conj [cider/cider-nrepl,"0.47.1"] -- update-in [:repl-options,:nrepl-middleware] conj '["cider.nrepl/cider-middleware"]' -- with-profile +uberjar repl :headless & popd
+; Jacking in...
+; Connecting using "Leiningen" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+; 
+
+; Starting Jack-in: pushd c:\Users\gusta\Downloads\clojure_course\hospital & cmd.exe /d /c lein update-in :dependencies conj [nrepl,"1.1.1"] -- update-in :plugins conj [cider/cider-nrepl,"0.47.1"] -- update-in [:repl-options,:nrepl-middleware] conj '["cider.nrepl/cider-middleware"]' -- with-profile +uberjar repl :headless & popd
+; Jacking in...
+; Connecting using "Leiningen" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+; 
+
+; Starting Jack-in: pushd c:\Users\gusta\Downloads\clojure_course\hospital & cmd.exe /d /c lein update-in :dependencies conj [nrepl,"1.1.1"] -- update-in :plugins conj [cider/cider-nrepl,"0.47.1"] -- update-in [:repl-options,:nrepl-middleware] conj '["cider.nrepl/cider-middleware"]' -- with-profile +uberjar repl :headless & popd
+; Using host:port 127.0.0.1:51584 ...
+; Hooking up nREPL sessions ...
+; Connected session: clj
+; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
+nil
+clj꞉hospital.core꞉> 
+"Please see https://calva.io/output/#about-stdout-in-the-repl-window
+about why stdout printed to this file is prepended with `;` to be line comments."
+clj꞉hospital.core꞉> 
+; Jack-in done.
+clj꞉hospital.core꞉> 
+; {:espera <-()-<,
 ;  :laboratorio1 <-()-<,
 ;  :laboratorio2 <-()-<,
 ;  :laboratorio3 <-()-<}
 nil
 clj꞉hospital.aula1꞉> 
+; {:espera <-()-<,
+;  :laboratorio1 <-()-<,
+;  :laboratorio2 <-()-<,
+;  :laboratorio3 <-()-<}
+nil
+clj꞉hospital.aula1꞉> 
+; {:espera <-()-<,
+;  :laboratorio1 <-()-<,
+;  :laboratorio2 <-()-<,
+;  :laboratorio3 <-()-<}
+nil
+clj꞉hospital.aula1꞉> 
+; {:espera <-()-<,
+;  :laboratorio1 <-()-<,
+;  :laboratorio2 <-()-<,
+;  :laboratorio3 <-()-<}
+; Syntax error compiling at (c:\Users\gusta\Downloads\clojure_course\hospital\src\hospital\aula1.clj:12:3).
+; No such var: h.logic/inclui-na-fila
+clj꞉hospital.aula1꞉> 
+#'hospital.aula1/hospital
+clj꞉hospital.aula1꞉> 
+; {:espera <-()-<,
+;  :laboratorio1 <-()-<,
+;  :laboratorio2 <-()-<,
+;  :laboratorio3 <-()-<}
+; Syntax error reading source at (REPL:17:21).
+; Unmatched delimiter: )
+clj꞉hospital.aula1꞉> 
+; {:espera <-()-<,
+;  :laboratorio1 <-()-<,
+;  :laboratorio2 <-()-<,
+;  :laboratorio3 <-()-<}
+#'hospital.aula1/hospital
+clj꞉hospital.aula1꞉> 
+; {:espera <-()-<,
+;  :laboratorio1 <-()-<,
+;  :laboratorio2 <-()-<,
+;  :laboratorio3 <-()-<}
+nil
+clj꞉hospital.aula1꞉> 
+{:espera <-()-<, :laboratorio1 <-()-<, :laboratorio2 <-()-<, :laboratorio3 <-()-<}
+clj꞉hospital.aula1꞉> 
+#function[hospital.hospital/novo-hospital]
+clj꞉hospital.hospital꞉> 
+{:espera <-()-<, :laboratorio1 <-()-<, :laboratorio2 <-()-<, :laboratorio3 <-()-<}
+clj꞉hospital.hospital꞉> 
+{:espera <-()-<, :laboratorio1 <-()-<, :laboratorio2 <-()-<, :laboratorio3 <-()-<}
+clj꞉hospital.hospital꞉> 
+<-()-<
+clj꞉hospital.hospital꞉> 
+<-()-<
+clj꞉hospital.hospital꞉> 
+; Execution error (ArityException) at hospital.hospital/eval10712 (form-init13227010778099312209.clj:22).
+; Wrong number of args (0) passed to: clojure.lang.PersistentArrayMap
+clj꞉hospital.hospital꞉> 
+; Execution error (ArityException) at hospital.hospital/eval10716 (form-init13227010778099312209.clj:22).
+; Wrong number of args (0) passed to: clojure.lang.PersistentArrayMap
+clj꞉hospital.hospital꞉> 
+; Execution error (ArityException) at hospital.hospital/eval10735 (form-init13227010778099312209.clj:24).
+; Wrong number of args (0) passed to: clojure.lang.PersistentArrayMap
+clj꞉hospital.hospital꞉> 
+; Execution error (ArityException) at hospital.hospital/eval10740 (form-init13227010778099312209.clj:24).
+; Wrong number of args (0) passed to: clojure.lang.PersistentArrayMap
+clj꞉hospital.hospital꞉> 
+; {:espera <-()-<,
+;  :laboratorio1 <-()-<,
+;  :laboratorio2 <-()-<,
+;  :laboratorio3 <-()-<}
+nil
+clj꞉hospital.hospital꞉> 
+; <-("333")-<
+nil
+clj꞉hospital.hospital꞉> 
+<-("333")-<
+clj꞉hospital.hospital꞉> 
+; Execution error (ArityException) at hospital.hospital/eval10765 (form-init13227010778099312209.clj:24).
+; Wrong number of args (0) passed to: clojure.lang.PersistentArrayMap
+clj꞉hospital.hospital꞉> 
+<-("333")-<
+clj꞉hospital.hospital꞉> 
+; <-("333")-<
+nil
+clj꞉hospital.hospital꞉> 
+<-("333")-<
+clj꞉hospital.hospital꞉> 
+; <-("333")-<
+; Execution error (ArityException) at hospital.hospital/eval10790 (form-init13227010778099312209.clj:24).
+; Wrong number of args (0) passed to: clojure.lang.PersistentArrayMap
+clj꞉hospital.hospital꞉> 
+; <-("333")-<
+<-("333")-<
+clj꞉hospital.hospital꞉> 
+<-("333")-<
+clj꞉hospital.hospital꞉> 
+; Syntax error compiling at (c:\Users\gusta\Downloads\clojure_course\hospital\src\hospital\aula1.clj:12:3).
+; No such var: h.logic/inclui-na-fila
+clj꞉hospital.aula1꞉> 
+#'hospital.logic/inclui-na-fila
+clj꞉hospital.logic꞉> 
+; {:espera <-()-<,
+;  :laboratorio1 <-()-<,
+;  :laboratorio2 <-()-<,
+;  :laboratorio3 <-()-<}
+nil
+clj꞉hospital.aula1꞉> 
+("111")
+clj꞉hospital.aula1꞉> 
+("222")
+clj꞉hospital.aula1꞉> 
+("444")
+clj꞉hospital.aula1꞉> 
+; ("444")
+nil
+clj꞉hospital.aula1꞉> 
+; ("444")
+nil
+clj꞉hospital.aula1꞉> 
+<-("333")-<
+clj꞉hospital.hospital꞉> 
+<-("333")-<
+clj꞉hospital.hospital꞉> 
+; Syntax error compiling def at (c:\Users\gusta\Downloads\clojure_course\hospital\src\hospital\hospital.clj:25:1).
+; First argument to def must be a Symbol
+clj꞉hospital.hospital꞉> 
+; Syntax error compiling def at (c:\Users\gusta\Downloads\clojure_course\hospital\src\hospital\hospital.clj:25:1).
+; First argument to def must be a Symbol
+clj꞉hospital.hospital꞉> 
+; Execution error (ClassCastException) at jdk.internal.reflect.DirectMethodHandleAccessor/null (DirectMethodHandleAccessor.java:103).
+; class clojure.lang.PersistentArrayMap cannot be cast to class java.lang.Number (clojure.lang.PersistentArrayMap is in unnamed module of loader 'app'; java.lang.Number is in module java.base of loader 'bootstrap')
+clj꞉hospital.hospital꞉> 
+<-("333")-<
+clj꞉hospital.hospital꞉> 
+; Execution error (ArityException) at hospital.hospital/eval11023 (form-init13227010778099312209.clj:25).
+; Wrong number of args (2) passed to: clojure.core/assoc--5481
+clj꞉hospital.hospital꞉> 
+; Execution error (ArityException) at hospital.hospital/eval11040 (form-init13227010778099312209.clj:25).
+; Wrong number of args (2) passed to: clojure.core/update
+clj꞉hospital.hospital꞉> 
+; Execution error (ClassCastException) at hospital.hospital/eval11057 (form-init13227010778099312209.clj:25).
+; class java.lang.String cannot be cast to class clojure.lang.IFn (java.lang.String is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉hospital.hospital꞉> 
+{:espera <-("333")-<, :laboratorio1 <-()-<, :laboratorio2 <-()-<, :laboratorio3 <-()-<}
+clj꞉hospital.hospital꞉> 
+; ("444")
+nil
+clj꞉hospital.aula1꞉> 
+#'hospital.logic/inclui-na-fila
+clj꞉hospital.logic꞉> 
+; {:espera <-("111")-<,
+;  :laboratorio1 <-("222")-<,
+;  :laboratorio2 <-()-<,
+;  :laboratorio3 <-("444")-<}
+nil
+clj꞉hospital.aula1꞉> 
+; {:espera <-("111" "555" "888")-<,
+;  :laboratorio1 <-("222" "777")-<,
+;  :laboratorio2 <-()-<,
+;  :laboratorio3 <-("444")-<}
+nil
+clj꞉hospital.aula1꞉> 
+{:espera <-()-<, :laboratorio1 <-()-<, :laboratorio2 <-()-<, :laboratorio3 <-()-<}
+clj꞉hospital.hospital꞉> 
+{:espera <-()-<, :laboratorio1 <-()-<, :laboratorio2 <-()-<, :laboratorio3 <-()-<}
+clj꞉hospital.hospital꞉> 
+{:espera <-("333")-<, :laboratorio1 <-()-<, :laboratorio2 <-()-<, :laboratorio3 <-()-<}
+clj꞉hospital.hospital꞉> 
+{:espera <-()-<, :laboratorio1 <-()-<, :laboratorio2 <-()-<, :laboratorio3 <-()-<}
+clj꞉hospital.hospital꞉> 
+#'hospital.logic/exclui-da-fila
+clj꞉hospital.logic꞉> 
+; Execution error (ArityException) at nrepl.middleware.interruptible-eval/evaluate$fn$fn (interruptible_eval.clj:87).
+; Wrong number of args (1) passed to: hospital.logic/exclui-da-fila
+clj꞉hospital.aula1꞉> 
+; {:espera <-("555" "888")-<,
+;  :laboratorio1 <-("222" "777")-<,
+;  :laboratorio2 <-()-<,
+;  :laboratorio3 <-("444")-<}
+nil
+clj꞉hospital.aula1꞉> 
+; {:espera <-("555" "888")-<,
+;  :laboratorio1 <-("777")-<,
+;  :laboratorio2 <-()-<,
+;  :laboratorio3 <-("444")-<}
+nil
+clj꞉hospital.aula1꞉> 
+; {:espera <-("555" "888")-<,
+;  :laboratorio1 <-("777")-<,
+;  :laboratorio2 <-()-<,
+;  :laboratorio3 <-()-<}
+nil
+clj꞉hospital.aula1꞉> 
+; {:espera <-("888")-<,
+;  :laboratorio1 <-("777")-<,
+;  :laboratorio2 <-()-<,
+;  :laboratorio3 <-()-<}
+nil
+clj꞉hospital.aula1꞉> 
+; {:espera <-()-<,
+;  :laboratorio1 <-("777")-<,
+;  :laboratorio2 <-()-<,
+;  :laboratorio3 <-()-<}
+nil
+clj꞉hospital.aula1꞉> 
+; {:espera <-()-<,
+;  :laboratorio1 <-("777")-<,
+;  :laboratorio2 <-()-<,
+;  :laboratorio3 <-()-<,
+;  :labotario1 nil}
+nil
+clj꞉hospital.aula1꞉> 
+; {:espera <-()-<,
+;  :laboratorio1 <-()-<,
+;  :laboratorio2 <-()-<,
+;  :laboratorio3 <-()-<}
+nil
+clj꞉hospital.aula1꞉> 
+; {:espera <-()-<,
+;  :laboratorio1 <-()-<,
+;  :laboratorio2 <-()-<,
+;  :laboratorio3 <-()-<}
+nil
+clj꞉hospital.aula1꞉> 
+; {:espera <-("555" "888")-<,
+;  :laboratorio1 <-("777")-<,
+;  :laboratorio2 <-()-<,
+;  :laboratorio3 <-()-<}
+nil
+clj꞉hospital.aula1꞉> 
+; {:espera <-("111" "555" "888" "999")-<,
+;  :laboratorio1 <-("777")-<,
+;  :laboratorio2 <-()-<,
+;  :laboratorio3 <-()-<}
+nil
+clj꞉hospital.aula1꞉> 
+; {:espera <-("111" "555" "888" "999" "666")-<,
+;  :laboratorio1 <-("777")-<,
+;  :laboratorio2 <-()-<,
+;  :laboratorio3 <-()-<}
+nil
+clj꞉hospital.aula1꞉> 
+; {:espera <-("111" "555" "888" "999" "666" "222")-<,
+;  :laboratorio1 <-("777")-<,
+;  :laboratorio2 <-()-<,
+;  :laboratorio3 <-()-<}
+nil
+clj꞉hospital.aula1꞉> 
+#'hospital.logic/exclui-da-fila
+clj꞉hospital.logic꞉> 
+; {:espera <-("111" "555" "888" "999" "666" "222")-<,
+;  :laboratorio1 <-("777")-<,
+;  :laboratorio2 <-()-<,
+;  :laboratorio3 <-()-<}
+nil
+clj꞉hospital.aula1꞉> 
+; Syntax error compiling at (c:\Users\gusta\Downloads\clojure_course\hospital\src\hospital\logic.clj:9:3).
+; Unable to resolve symbol: cabe-na-fila? in this context
+clj꞉hospital.logic꞉> 
+#'hospital.model/novo-hospital
+clj꞉hospital.model꞉> 
+#'hospital.logic/exclui-da-fila
+clj꞉hospital.logic꞉> 
+; {:espera <-("111" "555" "888" "999" "666" "222")-<,
+;  :laboratorio1 <-("777")-<,
+;  :laboratorio2 <-()-<,
+;  :laboratorio3 <-()-<}
+nil
+clj꞉hospital.aula1꞉> 
+#'hospital.logic/exclui-da-fila
+clj꞉hospital.logic꞉> 
+; {:espera <-("111" "555" "888" "999" "666" "222")-<,
+;  :laboratorio1 <-("777")-<,
+;  :laboratorio2 <-()-<,
+;  :laboratorio3 <-()-<}
+nil
+clj꞉hospital.aula1꞉> 
+; nil
+nil
+clj꞉hospital.aula1꞉> 
+; nil
+nil
+clj꞉hospital.aula1꞉> 
+#'hospital.logic/exclui-da-fila
+clj꞉hospital.logic꞉> 
+; nil
+nil
+clj꞉hospital.aula1꞉> 
+#'hospital.logic/exclui-da-fila
+clj꞉hospital.logic꞉> 
+; Execution error (ExceptionInfo) at hospital.logic/inclui-na-fila (form-init13227010778099312209.clj:9).
+; Fila ja esta cheia
+clj꞉hospital.aula1꞉> 
+; Execution error (ExceptionInfo) at hospital.logic/inclui-na-fila (form-init13227010778099312209.clj:9).
+; Fila ja esta cheia
+clj꞉hospital.aula1꞉> 
+#'hospital.logic/exclui-da-fila
+clj꞉hospital.logic꞉> 
+; {:espera <-("111" "555" "888" "999" "666" "222")-<,
+;  :laboratorio1 <-("777")-<,
+;  :laboratorio2 <-()-<,
+;  :laboratorio3 <-()-<}
+nil
+clj꞉hospital.aula1꞉> 
+#'hospital.logic/exclui-da-fila
+clj꞉hospital.logic꞉> 
+; Execution error (ExceptionInfo) at hospital.logic/inclui-na-fila (form-init13227010778099312209.clj:13).
+; Fila ja esta cheia
+clj꞉hospital.aula1꞉> 
+#'hospital.logic/exclui-da-fila
+clj꞉hospital.logic꞉> 
+; Execution error (ExceptionInfo) at hospital.logic/inclui-na-fila (form-init13227010778099312209.clj:13).
+; The currente queue is full ... 
+clj꞉hospital.aula1꞉> 
+#'hospital.logic/exclui-da-fila
+clj꞉hospital.logic꞉> 
