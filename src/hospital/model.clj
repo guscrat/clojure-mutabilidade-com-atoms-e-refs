@@ -5,3 +5,5 @@
    :laboratorio1 clojure.lang.PersistentQueue/EMPTY,
    :laboratorio2 clojure.lang.PersistentQueue/EMPTY,
    :laboratorio3 clojure.lang.PersistentQueue/EMPTY})
+
+(def fila-vazia clojure.lang.PersistentQueue/EMPTY)
