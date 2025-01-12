@@ -21,7 +21,6 @@
 
   (def hospital (h.logic/inclui-na-fila hospital :espera "999"))
   (def hospital (h.logic/inclui-na-fila hospital :espera "666"))
-  (def hospital (h.logic/inclui-na-fila hospital :espera "222"))
 
   (pprint hospital))
 
@@ -32,22 +31,21 @@
   [pessoa]
   (def hospital-2 (h.logic/inclui-na-fila hospital :espera pessoa)))
 
-(defn simula-um-dia-atendimento-2
-  ;; Simulando um multi-threading com esse symbol sendo bindado.
-  ;; No meu ambiente no VSCode nao funciona nem com uma thread.
-  ;; Simplesmente inviavel.
-  []
-  (def hospital-2 (h.model/novo-hospital))
+;; (defn simula-um-dia-atendimento-2
+;;   ;; Simulando um multi-threading com esse symbol sendo bindado.
+;;   ;; No meu ambiente no VSCode nao funciona nem com uma thread.
+;;   ;; Simplesmente inviavel.
+;;   []
+;;   (def hospital-2 (h.model/novo-hospital))
   
-  (.start (Thread. (fn [] (inclui-na-fila-malvado "111"))))
-  (.start (Thread. (fn [] (inclui-na-fila-malvado "222"))))
-  (.start (Thread. (fn [] (inclui-na-fila-malvado "333"))))
-  (.start (Thread. (fn [] (inclui-na-fila-malvado "444"))))
-  (.start (Thread. (fn [] (inclui-na-fila-malvado "555"))))
-  (.start (Thread. (fn [] (inclui-na-fila-malvado "666"))))
+;;   (.start (Thread. (fn [] (inclui-na-fila-malvado "111"))))
+;;   (.start (Thread. (fn [] (inclui-na-fila-malvado "222"))))
+;;   (.start (Thread. (fn [] (inclui-na-fila-malvado "333"))))
+;;   (.start (Thread. (fn [] (inclui-na-fila-malvado "444"))))
+;;   (.start (Thread. (fn [] (inclui-na-fila-malvado "555"))))
   
-  (pprint hospital-2)
+;;   (pprint hospital-2)
 
-  )
+;;   )
 
-(simula-um-dia-atendimento-2)
+;; (simula-um-dia-atendimento-2)
