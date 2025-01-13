@@ -1,16 +1,9 @@
-; #<Atom@242f17e2: 
-;   {:espera <-("Maria" "Daniela" "Guilherme")-<,
-;    :laboratorio1 <-("Joao")-<,
+#'hospital.aula4/simula-um-dia-em-paralelo-refatorada
+clj꞉hospital.aula4꞉> 
+nil
+clj꞉hospital.aula4꞉> 
+; #<Atom@578a12d2: 
+;   {:espera <-("111" "333" "555" "444" "222")-<,
+;    :laboratorio1 <-()-<,
 ;    :laboratorio2 <-()-<,
 ;    :laboratorio3 <-()-<}>
-nil
-clj꞉hospital.aula5꞉> 
-#'hospital.logic/transfere
-clj꞉hospital.logic꞉> 
-; #<Atom@5aa4fc04: 
-;   {:espera <-("Maria" "Daniela" "Guilherme")-<,
-;    :laboratorio1 <-("Joao")-<,
-;    :laboratorio2 <-()-<,
-;    :laboratorio3 <-()-<}>
-nil
-clj꞉hospital.aula5꞉> 
