@@ -12,7 +12,7 @@
   [object queue pessoa]
   (if (cabe-na-fila? object queue)
     (update object queue conj pessoa)
-    (throw (ex-info "The currente queue is full ... " {:tentando-adicionar pessoa}))))
+    (throw (ex-info "Fila ja esta cheia" {:tentando-adicionar pessoa}))))
 
 (defn exclui-da-fila
   [object queue]
