@@ -17,3 +17,18 @@
 (defn exclui-da-fila
   [object queue]
   (update object queue pop))
+
+(defn proxima
+  "Retorna o proxima paciente"
+  [hospital departamento]
+  (-> hospital
+      departamento
+      peek))
+
+(defn transfere
+  "Transfere o proxima da fial de para fila para"
+  [hospital de para]
+  (let [pessoa (proxima hospital de)]
+    (-> hospital
+        (exclui-da-fila de)
+        (inclui-na-fila para pessoa))))
