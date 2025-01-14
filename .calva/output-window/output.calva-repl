@@ -1,9 +1,7 @@
-#'hospital.aula4/simula-um-dia-em-paralelo-refatorada
-clj꞉hospital.aula4꞉> 
-nil
-clj꞉hospital.aula4꞉> 
-; #<Atom@578a12d2: 
-;   {:espera <-("111" "333" "555" "444" "222")-<,
-;    :laboratorio1 <-()-<,
+; #<Atom@16b3ade: 
+;   {:espera <-("Maria" "Daniela" "Guilherme")-<,
+;    :laboratorio1 <-("Joao")-<,
 ;    :laboratorio2 <-()-<,
 ;    :laboratorio3 <-()-<}>
+nil
+clj꞉hospital.aula5꞉> 
