@@ -1,7 +1,142 @@
-; #<Atom@16b3ade: 
-;   {:espera <-("Maria" "Daniela" "Guilherme")-<,
-;    :laboratorio1 <-("Joao")-<,
-;    :laboratorio2 <-()-<,
-;    :laboratorio3 <-()-<}>
+; This is the Calva REPL Window.
+; It's just a file, really, with some special treatment from Calva.
+; Use it as a REPL input prompt if you like. (When the REPL is connected.)
+; TIPS: The keyboard shortcut `ctrl+alt+o r` shows and focuses this window
+; Please see https://calva.io/repl-window/ for more info.
+; Happy coding! ♥️
+
+; TIPS: As with any Clojure file when the REPL is connected:
+; - `alt+enter` evaluates the current top level form.
+; - `ctrl+enter` evaluates the current form.
+; Special for this file:
+; - `alt+up` and `alt+down` traverse up and down the REPL command history
+;    when the cursor is after the last contents at the prompt
+; 
+; See also the Calva Inspector: https://calva.io/inspector/
+
+PLEASE NOTE
+We will update the default location of this file.
+The new default location will be
+  "<projectRootPath>/.calva/repl.calva-repl"
+For now the legacy path is used by default.
+To give yourself a smooth transition, you can opt in
+to the change, by configuring this setting as false:
+  "calva.useLegacyReplWindowPath"
+and then add "**/.calva/repl.calva-repl" to your ".gitignore" file.
+
+
+This file is configured as the output destination for all REPL output.
+You can configure this with the setting:
+  "calva.outputDestinations"
+
+
+; Jacking in...
+; Connecting using "Leiningen" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+; 
+
+; Starting Jack-in: pushd c:\Users\gusta\Downloads\clojure_course\hospital & cmd.exe /d /c lein update-in :dependencies conj [nrepl,"1.1.1"] -- update-in :plugins conj [cider/cider-nrepl,"0.47.1"] -- update-in [:repl-options,:nrepl-middleware] conj '["cider.nrepl/cider-middleware"]' -- with-profile +uberjar repl :headless & popd
+; Using host:port 127.0.0.1:63311 ...
+; Hooking up nREPL sessions ...
+; Connected session: clj
+; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
 nil
-clj꞉hospital.aula5꞉> 
+clj꞉hospital.core꞉> 
+"Please see https://calva.io/output/#about-stdout-in-the-repl-window
+about why stdout printed to this file is prepended with `;` to be line comments."
+clj꞉hospital.core꞉> 
+; Jack-in done.
+clj꞉hospital.core꞉> 
+nil
+clj꞉hospital.aula6꞉> 
+nil
+clj꞉hospital.aula6꞉> 
+nil
+clj꞉hospital.aula6꞉> 
+; Execution error (IllegalStateException) at hospital.aula6/chega-em! (form-init8299768018813401633.clj:14).
+; No transaction running
+clj꞉hospital.aula6꞉> 
+; Execution error (IllegalStateException) at hospital.aula6/chega-em! (form-init8299768018813401633.clj:14).
+; No transaction running
+clj꞉hospital.aula6꞉> 
+; Execution error (IllegalStateException) at hospital.aula6/chega-em! (form-init8299768018813401633.clj:14).
+; No transaction running
+clj꞉hospital.aula6꞉> 
+; Execution error (IllegalStateException) at hospital.aula6/chega-em! (form-init8299768018813401633.clj:14).
+; No transaction running
+clj꞉hospital.aula6꞉> 
+#object[clojure.lang.PersistentQueue 0x7a1471d1 "clojure.lang.PersistentQueue@92150b9b"]
+clj꞉hospital.aula6꞉> 
+; {:espera #ref[{:status :ready, :val #object[clojure.lang.PersistentQueue 0xbb32543 clojure.lang.PersistentQueue@92150b9b]} 0x12b34dcb], :laboratorio1 #ref[{:status :ready, :val #object[clojure.lang.PersistentQueue 0x7281e857 clojure.lang.PersistentQueue@1]} 0x4e579321], :laboratorio2 #ref[{:status :ready, :val #object[clojure.lang.PersistentQueue 0x7281e857 clojure.lang.PersistentQueue@1]} 0x7a6a766f], :laboratorio3 #ref[{:status :ready, :val #object[clojure.lang.PersistentQueue 0x7281e857 clojure.lang.PersistentQueue@1]} 0x68e1dd5c]}
+nil
+clj꞉hospital.aula6꞉> 
+; {:espera #<Ref@3fc4746e: <-("guilherme")-<>,
+;  :laboratorio1 #<Ref@10e177ad: <-()-<>,
+;  :laboratorio2 #<Ref@d5a35fd: <-()-<>,
+;  :laboratorio3 #<Ref@14a1e625: <-()-<>}
+nil
+clj꞉hospital.aula6꞉> 
+; Execution error (IllegalStateException) at hospital.aula6/chega-em! (form-init8299768018813401633.clj:14).
+; No transaction running
+clj꞉hospital.aula6꞉> 
+; Execution error (ClassCastException) at hospital.aula6/chega-em (form-init8299768018813401633.clj:7).
+; class clojure.lang.PersistentQueue cannot be cast to class java.util.concurrent.Future (clojure.lang.PersistentQueue is in unnamed module of loader 'app'; java.util.concurrent.Future is in module java.base of loader 'bootstrap')
+clj꞉hospital.aula6꞉> 
+; {:espera #<Ref@5582d571: <-("guilherme")-<>,
+;  :laboratorio1 #<Ref@7eea854b: <-()-<>,
+;  :laboratorio2 #<Ref@4c630cfd: <-()-<>,
+;  :laboratorio3 #<Ref@395ac587: <-()-<>}
+nil
+clj꞉hospital.aula6꞉> 
+; {:espera #<Ref@5d13dcea: <-("guilherme")-<>,
+;  :laboratorio1 #<Ref@30a5800a: <-()-<>,
+;  :laboratorio2 #<Ref@31303d1e: <-()-<>,
+;  :laboratorio3 #<Ref@3a730de9: <-()-<>}
+nil
+clj꞉hospital.aula6꞉> 
+#'hospital.test/incia-meu-hospital
+clj꞉hospital.test꞉> 
+; Execution error (IllegalStateException) at hospital.test/chega-em! (form-init8299768018813401633.clj:15).
+; No transaction running
+clj꞉hospital.test꞉> 
+#object[clojure.lang.PersistentQueue 0x6242866d "clojure.lang.PersistentQueue@16d39cca"]
+clj꞉hospital.test꞉> 
+; {:espera #<Ref@78d8d401: <-("gustavo")-<>,
+;  :laboratorio1 #<Ref@5d782b2d: <-()-<>,
+;  :laboratorio2 #<Ref@2c5392e7: <-()-<>,
+;  :laboratorio3 #<Ref@6c4db04f: <-()-<>}
+nil
+clj꞉hospital.test꞉> 
+; {:espera #<Ref@9930127: <-()-<>,
+;  :laboratorio1 #<Ref@436f3cb6: <-()-<>,
+;  :laboratorio2 #<Ref@1663065b: <-()-<>,
+;  :laboratorio3 #<Ref@4d366914: <-()-<>}
+nil
+clj꞉hospital.test꞉> 
+; <-()-<
+; {:espera #<Ref@3244ff38: <-()-<>,
+;  :laboratorio1 #<Ref@7c9c17da: <-()-<>,
+;  :laboratorio2 #<Ref@6ab245f: <-()-<>,
+;  :laboratorio3 #<Ref@31ddd23a: <-()-<>}
+nil
+clj꞉hospital.test꞉> 
+; <-("gustavo")-<
+; {:espera #<Ref@659a3028: <-()-<>,
+;  :laboratorio1 #<Ref@50b065f7: <-()-<>,
+;  :laboratorio2 #<Ref@bd04c8: <-()-<>,
+;  :laboratorio3 #<Ref@61ed7d43: <-()-<>}
+nil
+clj꞉hospital.test꞉> 
+; {:espera #<Ref@705a8489: <-("gustavo")-<>,
+;  :laboratorio1 #<Ref@5290571d: <-()-<>,
+;  :laboratorio2 #<Ref@2bc4c981: <-()-<>,
+;  :laboratorio3 #<Ref@1ae0c415: <-()-<>}
+nil
+clj꞉hospital.test꞉> 
+; {:espera #<Ref@99056ec: <-("gustavo")-<>,
+;  :laboratorio1 #<Ref@4e30cfbe: <-()-<>,
+;  :laboratorio2 #<Ref@a2eede: <-()-<>,
+;  :laboratorio3 #<Ref@4a6bb35d: <-()-<>}
+nil
+clj꞉hospital.test꞉> 

@@ -34,5 +34,3 @@
     (print "5 ----")
     (pprint @hospital-lima)
     ))
-
-(testa-atomo)
